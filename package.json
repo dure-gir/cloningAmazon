@@ -1,5 +1,4 @@
 {
-	"homepage": "https://dure-gir.github.io/cloningAmazon",
 	"name": "amazon",
 	"private": true,
 	"version": "0.0.0",
@@ -12,6 +11,7 @@
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview"
 	},
+	"homepage": "https://dure-gir.github.io/cloningAmazon",
 	"dependencies": {
 		"@emotion/react": "^11.11.4",
 		"@emotion/styled": "^11.11.5",
