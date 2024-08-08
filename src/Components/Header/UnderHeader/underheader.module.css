@@ -1,0 +1,46 @@
+
+
+.lower__container {
+    background-color: #232f3e;
+    color: white;
+}
+
+
+.lower__container > ul {
+    display: flex;
+    list-style: none;
+    /* gap: 5px; */
+}
+
+
+.lower__container >ul li{
+    padding: 8px;
+    border:  1px solid transparent;
+    border-radius: 3px;
+    /* transition: border-color 0.3s ease;  */
+}
+
+.lower__container > ul li:first-child{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.lower__container >ul li:hover{
+    border-color: white;
+}
+
+
+
+
+.canvas_header >div svg {
+    margin-right: 8px;
+}
+
+@media screen and (max-width:768px){
+
+    .lower__container ul li:not(:first-child){
+        display: none;
+    }
+
+}

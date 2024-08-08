@@ -1,0 +1,17 @@
+/* .container{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: -10%;
+} */
+
+.container{
+    position: relative;
+    margin-top: -20%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    max-width: 1600px;
+    gap: 35px;
+    margin-inline: auto;
+    place-items: center;
+}

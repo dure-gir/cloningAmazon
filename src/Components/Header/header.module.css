@@ -1,0 +1,396 @@
+.header_outer_container{
+    background-color: #131921;
+    height: 70px;
+    color:#fff;
+    padding-top: 5px;
+   
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 111;
+}
+
+.header_inner_container{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.header_left{
+    display: flex;
+    gap: 6px; 
+}
+
+.header_left >div:nth-child(1){
+    display: flex;
+    align-items: center;
+    margin-left: 11px;
+    width: auto;
+    padding-top: 4px;
+    flex-shrink: 0;
+}
+
+.header_left >div:nth-child(1) a{
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 1px 8px 0 6px;
+    margin: 1px;
+    height: 50px;
+    width: 100%;
+    line-height: 0;
+    font-size: 14px;
+}
+
+.header_left >div:nth-child(1) a img{
+    height: 70%;
+}
+
+.header_left >div:nth-child(2){
+    display: flex;
+    width: auto;
+    height: 60px;
+    overflow: hidden;
+    align-items: center;
+    gap: 4px;
+    padding-right: 5px;
+}
+
+.location{
+    display: flex;   
+    flex-direction: column;
+}
+
+.location p:nth-child(1){
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 400;
+    color: rgb(204,204,204);
+}
+
+
+.header_middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.header_middle select{
+    font-weight: bold;
+}
+.header_middle select,.header_middle input{
+   padding: 10px;
+   outline: 1px solid white;
+}
+
+.header_middle select {
+    border: none;
+    background-color: #D4D4D4;
+}
+
+.header_middle input{
+    border: 1px solid white;
+    width: 100%;
+    margin-right: -2px;
+    outline: none;
+    color: gray;
+}
+
+.header_middle svg{
+    padding: 7px;
+    background-color: #febd69;
+    color: #1a1a1a !important;
+    
+}
+
+.header_middle svg:hover{
+    background-color: #d49644;
+}
+
+.header_middle:focus-within{
+    border: 2px solid rgb(255, 153, 0);
+}
+
+
+
+
+
+.header_right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.header_right a:nth-child(1) img {
+    width: 30px;
+}
+
+.header_right a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 5px;
+}
+
+.header_right a select{
+    background-color: #1a1a1a;
+    border: none;
+    color: white;
+}
+
+
+.location p:nth-child(1),
+.header_right .userLink >div p:nth-child(1),
+.header_right a:nth-child(3) >p:nth-child(1),
+.returns{
+    font-size: 12px !important;
+    line-height: 14px;
+}
+
+
+.location p:nth-child(2),
+.header_right a.userLink >div span,
+.header_right a.userLink >div p:nth-child(2),
+.orders{
+    font-size: 14px !important;
+    line-height: 15px !important;
+    font-weight: 700 !important;
+    
+}
+
+
+
+/** css for ....*/
+
+.accAndLists{
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    width: 500px;
+    right: 20px;
+    height: 420px;
+    border-radius: 3px;
+    color: #131921;
+    display: none;
+    z-index: 10000 !important;
+    transition: display 2s ease; 
+}
+
+
+.header_signIn_btn button{
+    background-color: #FFCD4F;
+    padding-block: 8px;
+    padding-inline: 100px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header_signIn_btn .sign_here{
+    font-size: 12px;
+}
+
+.header_signIn_btn >div span {
+    font-size: 11px;
+    color:cadetblue;
+}
+
+.text_center{
+    text-align: center;
+    border-bottom: 1px  solid #DDD;
+    padding-block: 20px 5px;
+    margin-inline: 20px;
+}
+
+.signAcc_lists{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-block: 15px;
+}
+
+.signAcc_lists >div:nth-child(1){
+    padding-left: 20px;
+}
+
+.signAcc_lists ul{
+    list-style: none;
+}
+
+.signAcc_lists h4{
+    font-size: 16px;
+    font-weight: 650;
+    line-height: 40px;
+}
+
+.signAcc_lists ul li a{
+    text-decoration: none;
+    color: #131921;
+    text-align: left;
+    font-size: 13px !important;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.vertical{
+    border-left: 1px solid #DDD;
+    padding-left: 10px;
+}
+
+
+.header_right .userLink:hover + .accAndLists,
+.header_right .accAndLists:hover {
+  display: block;
+}
+
+
+/***********  end here ********/
+
+
+/**?  langauage   **************/
+
+.language_detail_container{
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    z-index: 200;
+    border-radius: 5px;
+    color: #131921;
+    padding-left: 8px;
+    font-size: 13px;
+    /* line-height: 16px; */
+    display: none;
+
+}
+.header_right .first_link:hover + .language_detail_container,
+.header_right .language_detail_container:hover {
+  display: block;
+}
+
+
+.language_list ul{
+    list-style: none;
+}
+
+.language_list ul span a{
+    color: #131921;
+}
+
+/* .language_list ul svg{
+    color: white;
+    color: transparent;
+} */
+
+.language_list ul svg:hover{
+    color: orange;
+}
+
+.language_list ul li{
+    padding: 6px;
+}
+
+.language_list ul li a {
+    font-size: 13px;
+    line-height: 16x;
+}
+
+.language_change {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #DDD;
+    margin: 0 10px;
+    /* padding: 10px 0; */
+}
+
+.language_change span a , .language_link span a {
+    color: #007185;
+}
+
+.language_link {
+    border-top: 1px solid #DDD;
+    display: flex;
+    gap: 15px;
+}
+.gap{
+    padding: 6px;
+}
+.gap1{
+    padding: 15px;
+}
+
+.language_link span a {
+
+    font-size: 11px;
+}
+
+.english{
+    border-bottom: 1px solid #DDD;
+    margin: 5px;
+    padding: 10px;
+}
+
+a.change_country{
+    color: #007185;
+    text-align: center;
+}
+
+.amzonshopping{
+    padding-top: 8px;
+    margin: 0 10px;
+    padding-bottom: 15px;
+
+}
+
+/*?  *************  end here ***************** 1*/
+
+.header_right .cart span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* font-weight: bold; */
+    font-size: 15px;
+    color: orange;
+    z-index: 100;
+    
+}
+
+
+
+.header_left > div, .header_right a {
+  border: 1px solid transparent; 
+  border-radius: 3px;
+  transition: border-color 0.3s ease; 
+}
+
+.header_left > div:hover, .header_right a:not(.cart):hover{
+  border-color: white; /* Change only the border color on hover */
+}
+
+.header_right .userLink:hover + .accAndLists,
+.header_right .accAndLists:hover {
+  display: block;
+}
+
+@media(max-width:768px){
+
+    .header_outer_container{
+        height: auto;
+    }
+    .header_inner_container{
+        flex-direction: column;
+        height: auto;
+    }
+    .header_middle{
+        width: 100%;       
+    }
+}
